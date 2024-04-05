@@ -1,0 +1,9 @@
+function filmesFiltrados() {
+        return filmes.filter(filme => { 
+        return filme.generos.includes('Ficção Cientifica') ||filme.generos.includes('Ação');
+        }
+        );
+        }
+
+        const resultado = filmesFiltrados();
+        console.log(resultado);
